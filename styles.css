@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  padding: 1rem;
+}
+
+.main-content {
+  text-align: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+h2 {
+  margin: 100px auto;
+  text-align: center;
+}
+
+.rounds-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.nav-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  margin: 0 10px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.arrow {
+  color: #fff;
+  width: 6px;
+  height: 12px;
+}
+
+.round-display {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  margin: 0 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+}
+
+.rounds-play {
+  margin-bottom: 0px;
+}
+.rounds {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.round-display-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.games-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.game-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.game-item:last-child {
+  border-bottom: none;
+}
+
+.team-icon {
+  width: 32px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+.vs-icon {
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  vertical-align: middle;
+}
+
+.score {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0 4px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 480px) {
+  .round-display {
+    padding: 1rem;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .round-display-box {
+    align-items: center;
+  }
+
+  .games-list {
+    padding: 0 10px;
+  }
+
+  .game-item {
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+
+  .nav-button {
+    margin: 5px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .team-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .score {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+}

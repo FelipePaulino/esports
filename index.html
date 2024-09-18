@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEVN Esportes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>SEVN ESPORTES ⚽</h1>
+    </header>
+    <main class="main-content">
+      <h2>Confira as rodadas do nosso campeonato fictício!</h2>
+      <div class="rounds-container">
+        <div class="round-display">
+          <div class="round-display-box">
+            <button id="prevRound" class="nav-button" disabled>
+              <img src="images/arrow_left.png" class="arrow" />
+            </button>
+            <div>
+              <p class="rounds-play">Rodadas de Jogos</p>
+              <p class="rounds" id="roundTitle">RODADA 1</p>
+            </div>
+            <button id="nextRound" class="nav-button">
+              <img src="images/arrow_right.png" class="arrow" />
+            </button>
+          </div>
+          <ul id="gamesList" class="games-list"></ul>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
